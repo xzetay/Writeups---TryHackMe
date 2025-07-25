@@ -1,18 +1,18 @@
-![[Pasted image 20250709140547.png]]
+![Pasted image 20250709140547.png]]
 
-Enumeracion
+### Enumeracion
 
 ![[Pasted image 20250709141829.png]]
 
-Pagina web:
+### Pagina web:
 
 ![[Pasted image 20250709141916.png]]
 
-Primer fuzzeo:
+### Primer fuzzeo:
 
 ![[Pasted image 20250709143132.png]]
 
-Pagina web encontrada:
+### Pagina web encontrada:
 
 ![[Pasted image 20250709143155.png]]
 
@@ -20,7 +20,7 @@ En este lugar hay algo oculto, no se puede ver a simple vista pero si arrastramo
 
 ![[Pasted image 20250709143241.png]]
 
-El segundo fuzzeo muestra otro directorio:
+### El segundo fuzzeo muestra otro directorio:
 
 ![[Pasted image 20250709143446.png]]
 
@@ -46,7 +46,7 @@ En este caso el cifrado esta en Base 58:
 
 ![[Pasted image 20250709144102.png]]
 
-Procedemos a decodificar:
+### Procedemos a decodificar:
 
 ![[Pasted image 20250709144152.png]]
 
@@ -82,7 +82,7 @@ Hay un archivo llamado `shado`:
 
 ![[Pasted image 20250709152120.png]]
 
-Y otro llamad `password.txt`:
+Y otro llamado `password.txt`:
 
 ![[Pasted image 20250709152158.png]]
 
@@ -90,7 +90,7 @@ En esta maquina la contraseña del SSH es `M3tahuman`:
 
 ![[Pasted image 20250709152444.png]]
 
-Flag:
+### Flag:
 
 ![[Pasted image 20250709152508.png]]
 
@@ -100,7 +100,7 @@ Viendo que podemos ejecutar como root encontramos lo siguiente:
 
 Simplemente busque en GFTOBins como explotar el binario y listo:
 
-flag:
+### Flag:
 
 ![[Pasted image 20250709152639.png]]
 

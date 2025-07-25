@@ -137,13 +137,13 @@ Usando el comando find seguido de diferentes agregados podremos ver que binarios
 
 Se busco permisos en el binario que se nos mostró, luego de ello buscamos en la página https://gtfobins.github.io/ nmap para ver como explotar ese binario:
 
-![[Pasted image 20250616190911.png]]
+![29](./Pasted%20image%2020250616190911.png)
 
 Ahora solo pondremos la ruta de nmap y --interactive:
 
-![[Pasted image 20250616190741.png]]
+![29](./Pasted%20image%2020250616190741.png)
 
 Somos root!!
 Simplemente buscamos en el directorio root, listamos y listo:
 
-![[Pasted image 20250616191230.png]]
+![29](./Pasted%20image%2020250616191230.png)

@@ -1,3 +1,2 @@
 # Writeups-TryHackMe
 
-POTASO

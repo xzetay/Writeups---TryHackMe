@@ -1,3 +1,3 @@
 # Writeups-TryHackMe
 
-OLAOALAOALOALOALA
+POTASO

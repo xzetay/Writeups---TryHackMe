@@ -8,7 +8,7 @@ Nos podemos dar cuenta que los puertos 22, 80 y 443 están activos, por consigui
 
 ### Examinar página web
 
-![3](./images/Pasted%20image%2020250616164356.png)
+![3](./Pasted%20image%2020250616164356.png)
 
 Es un tipo de terminal en la cual hay comandos establecidos los cuales se pueden ejecutar y cada uno tiene un desenlace propio.
 

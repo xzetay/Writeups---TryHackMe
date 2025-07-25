@@ -1,4 +1,4 @@
-![nmap](./images/Pasted%20image%2020250616160151.png)
+![nmap](./Pasted%20image%2020250616160151.png)
 
 ### NMAP
 

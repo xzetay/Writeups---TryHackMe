@@ -40,8 +40,8 @@ Y en el caso de /key-1-of-3.txt:
 Ambos resultados se utilizarán posteriormente.
 ### Gobuster:
 
-![8](./images/Pasted%20image%2020250616164716.png) 
-![9](./images/Pasted%20image%2020250616164613.png)
+![8](./Pasted%20image%2020250616164716.png) 
+![9](./Pasted%20image%2020250616164613.png)
 
 Podemos visualizar que hay un wp-login.php el cual nos dirige a una página de logeo:
 
@@ -49,21 +49,21 @@ Podemos visualizar que hay un wp-login.php el cual nos dirige a una página de l
 
 Usando Admin como Usuario y Admin y contraseña no se dará ningún resultado aparte del mensaje de Error.
 
-![9](./Pasted%20image%2020250616172158.png)
+![11](./Pasted%20image%2020250616172158.png)
 
 Pero cuando agregaba nuevos usuarios para probar, el usuario Elliot dio un nuevo mensaje de error:
 
-![[Pasted image 20250616173025.png]]
+![12](./Pasted%20image%2020250616173025.png)
 
 Con este mensaje se puede confirmar que el usuario vendría a ser Elliot, solo faltaría la contraseña.
 
 Se usara BurpSite para interceptar el trpáfico de la máquina y ver las peticiones a más detalle.
 
-![[Pasted image 20250616171358.png]]
+![13](./Pasted%20image%2020250616171358.png)
 
 Podemos darnos cuenta:
 
-![[Pasted image 20250616171630.png]]
+![14](./Pasted%20image%2020250616171630.png)
 
 Aquí esta el segmento donde se especifica el Usuario y la Contraseña, con esto ya podremos utilizar Hydra para fuerza bruta.
 
@@ -71,68 +71,69 @@ Aquí esta el segmento donde se especifica el Usuario y la Contraseña, con esto
 
 Se usará Hydra para hallar la contraseña de Elliot
 
-![[Pasted image 20250616191551.png]]
+![15](./Pasted%20image%2020250616191551.png)
 
 ### Reverse Shell
 
 Ahora estamos en el dashboard de Elliot:
 
-![[Pasted image 20250616180409.png]]
+![16](./Pasted%20image%2020250616180409.png)
  
- En el apartado de Aparence logramos visualizar una opción la cual nos ayudará a subir una reverse shell php
+En el apartado de Aparence logramos visualizar una opción la cual nos ayudará a subir una reverse shell php
  
-![[Pasted image 20250616180804.png]]
+![17](./Pasted%20image%2020250616180804.png)
 
 Buscaremos una reverse shell para php y la copiaremos cambiando tanto nuestra IP como el Puerto.
 
-![[Pasted image 20250616181205.png]]
+![18](./Pasted%20image%2020250616181205.png)
 
 Abriremos el puerto 1234 desde netcat para la reverse shell:
 
-![[Pasted image 20250616183646.png]]
+![19](./Pasted%20image%2020250616183646.png)
 
 Esto aparecerá cuando lo que subamos sea exitoso:
 
-![[Pasted image 20250616182236.png]]
+![20](./Pasted%20image%2020250616182236.png)
 
 Para ingresar con la reverse shell deberemos usar esa URL 
 
-![[Pasted image 20250616182254.png]]
+![21](./Pasted%20image%2020250616182254.png)
 
 Ya estamos dentro!!!
 
-![[Pasted image 20250616183703.png]]
+![22](./Pasted%20image%2020250616183703.png)
 
 Se logra visualizar en la carpeta home que hay 2 archivos y uno de ellos parece ser una contraseña
 
-![[Pasted image 20250616183921.png]]
+![23](./Pasted%20image%2020250616183921.png)
 
 Efectivamente, es una hash en formato MD5.
 
-![[Pasted image 20250616184022.png]]
+![24](./Pasted%20image%2020250616184022.png)
 
 ### John the Ripper
 
-Con john romperemos la contraseña.
+Con john romperemos el hash.
 
-![[Pasted image 20250616184646.png]]
+![25](./Pasted%20image%2020250616184646.png)
 
 Antes de continuar aremos que la shell sea más interactiva esto para cambiar de usuario a robot
 
-![[Pasted image 20250616184905.png]]
+![26](./Pasted%20image%2020250616184905.png)
 
 Se ingresará al usuario robot con la contraseña ya hallada y luego hacer que nuestra shell sea más interactiva:
 
-![[Pasted image 20250616185238.png]]
+![27](./Pasted%20image%2020250616185238.png)
 
 Ahora si podemos utilizar cat en el archivo key*
 
-![[Pasted image 20250616185603.png]]
+![28](./Pasted%20image%2020250616185603.png)
+
 Ahora deberemos escalar al usuario root
 
 Usando el comando find seguido de diferentes agregados podremos ver que binarios están configurados mal: find / -perm /6000 2>/dev/null | grep '/bin/'
 
-![[Pasted image 20250616190409.png]]
+![29](./Pasted%20image%2020250616190409.png)
 
 Se busco permisos en el binario que se nos mostró, luego de ello buscamos en la página https://gtfobins.github.io/ nmap para ver como explotar ese binario:
 

@@ -1,14 +1,14 @@
-![image](./Pasted%20image%2020250616160151.png)
+![1](./Pasted%20image%2020250616160151.png)
 
 ### NMAP
 
-![image2](./Pasted%20image%2020250616162920.png)
+![2](./Pasted%20image%2020250616162920.png)
 
 Nos podemos dar cuenta que los puertos 22, 80 y 443 están activos, por consiguiente buscaremos en un navegador como Firefox la IP.
 
 ### Examinar página web
 
-![[Pasted image 20250616163045.png]]
+![3](./images/Pasted%20image%2020250616164356.png)
 
 Es un tipo de terminal en la cual hay comandos establecidos los cuales se pueden ejecutar y cada uno tiene un desenlace propio.
 

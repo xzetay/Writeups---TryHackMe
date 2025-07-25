@@ -1,8 +1,8 @@
-![nmap](./Pasted%20image%2020250616160151.png)
+![image](./Pasted%20image%2020250616160151.png)
 
 ### NMAP
 
-![[Pasted image 20250616162920.png]]
+![image](./Pasted%image%20250616162920.png).
 
 Nos podemos dar cuenta que los puertos 22, 80 y 443 están activos, por consiguiente buscaremos en un navegador como Firefox la IP.
 

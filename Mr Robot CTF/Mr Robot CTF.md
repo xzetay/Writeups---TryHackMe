@@ -147,3 +147,5 @@ Somos root!!
 Simplemente buscamos en el directorio root, listamos y listo:
 
 ![29](./Pasted%20image%2020250616191230.png)
+
+---

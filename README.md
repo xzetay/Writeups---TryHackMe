@@ -1,3 +1,3 @@
 # Writeups-TryHackMe
 
-POTASO
+Colección de resolución de maquinas en TryHackMe.

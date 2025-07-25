@@ -12,7 +12,7 @@ Nos podemos dar cuenta que los puertos 22, 80 y 443 están activos, por consigui
 
 Es un tipo de terminal en la cual hay comandos establecidos los cuales se pueden ejecutar y cada uno tiene un desenlace propio.
 
-![[Pasted image 20250616163552.png]]
+![4](./Pasted%20image%2020250616163552.png)
 
 robots.txt = Sirve para decirle a los motores de búsqueda (como Google, Bing, etc.) qué partes de tu sitio web pueden o no pueden rastrear (indexar).
 
@@ -25,31 +25,31 @@ robots.txt = Sirve para decirle a los motores de búsqueda (como Google, Bing, e
 
 Se puede usar para ver rutas y directorios ocultos.
 
-![[Pasted image 20250616164356.png]]
+![5](./Pasted%20image%2020250616164356.png)
 
 En este punto cuando los resultados de la búsqueda con robots.txt se me fue otorgada, empece a probar cada uno de ellos.
 
-![[Pasted image 20250616172641.png]]
+![6](./Pasted%20image%2020250616172641.png)
 
 En el caso de /fsocity.dic se nos otorga un diccionario.
 
 Y en el caso de /key-1-of-3.txt:
 
-![[Pasted image 20250616172823.png]]
+![7](./Pasted%20image%2020250616172823.png)
 
 Ambos resultados se utilizarán posteriormente.
 ### Gobuster:
 
-![[Pasted image 20250616164716.png]]
-![[Pasted image 20250616164613.png]]
+![8](./images/Pasted%20image%2020250616164716.png) 
+![9](./images/Pasted%20image%2020250616164613.png)
 
 Podemos visualizar que hay un wp-login.php el cual nos dirige a una página de logeo:
 
-![[Pasted image 20250616164803.png]]
+![10](./Pasted%20image%2020250616164803.png)
 
 Usando Admin como Usuario y Admin y contraseña no se dará ningún resultado aparte del mensaje de Error.
 
-![[Pasted image 20250616172158.png]]
+![9](./Pasted%20image%2020250616172158.png)
 
 Pero cuando agregaba nuevos usuarios para probar, el usuario Elliot dio un nuevo mensaje de error:
 
